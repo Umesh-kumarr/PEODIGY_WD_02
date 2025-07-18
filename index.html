@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch App</title>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Custom favicon with stopwatch emoji -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23007bff'/><text x='50%' y='55%' font-size='50' text-anchor='middle' fill='white' dy='.3em'>⏱️</text></svg>">
+</head>
+<body>
+    <!-- Main wrapper to center everything -->
+    <div class="main-wrapper">
+        <!-- Stopwatch container -->
+        <div class="container">
+            <h1 class="animated-title">Stopwatch</h1>
+            
+            <!-- Time display -->
+            <div id="display" aria-live="polite" aria-label="Elapsed time">
+                00:00:00.00
+            </div>
+            
+            <!-- Control buttons -->
+            <div class="buttons">
+                <button id="start" aria-label="Start the stopwatch">Start</button>
+                <button id="pause" aria-label="Pause the stopwatch">Pause</button>
+                <button id="reset" aria-label="Reset the stopwatch">Reset</button>
+                <button id="lap" aria-label="Record a lap">Lap</button>
+            </div>
+            
+            <!-- Lap times list -->
+            <ul id="laps" aria-label="Lap times"></ul>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 
